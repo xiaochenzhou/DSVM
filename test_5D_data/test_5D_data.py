@@ -261,9 +261,9 @@ support_vectors_minus = []
 # this part is responsible for random select  ***********************
 
 # local_additional_uploaded_node_data = np.array([ Edge_data[0] ])
-local_additional_uploaded_node_data =  Edge_data[0] 
+additional_data =  Edge_data[0]
 # local_additional_uploaded_node_label = np.array ( [Edge_label[0] ])
-local_additional_uploaded_node_label =  Edge_label[0] 
+additional_label =  Edge_label[0]
 
 #endcall
 
@@ -371,33 +371,30 @@ for i in range(Edge_node_n):
     
 # this part is responsible for random select
 
-    local_additional_uploaded_node_data_temp, local_additional_uploaded_node_label_temp = random_select(10000, Edge_data[i], Edge_label[i], Collect_support_vector_)
+    additional_data, additional_label = random_select(10000, Edge_data[i], Edge_label[i], Collect_support_vector_)
     # local_additional_uploaded_node_data_temp, local_additional_uploaded_node_label_temp = k_means_random_select(5000, Edge_data[i], Edge_label[i], Collect_support_vector_)
 
-    if (i == 0):
-        # print ("this is i = 0")
-        # local_additional_uploaded_node_data = np.array ( [  local_additional_uploaded_node_data_temp  ]  )
-        local_additional_uploaded_node_data = local_additional_uploaded_node_data_temp 
-        # local_additional_uploaded_node_label = np.array (  [  local_additional_uploaded_node_label_temp  ]  )
-        local_additional_uploaded_node_label =  local_additional_uploaded_node_label_temp  
-        Upload_support_vector_[i] = np.concatenate ( (Upload_support_vector_[i], local_additional_uploaded_node_data) , axis = 0 )
-        Upload_label[i] = np.concatenate (  (Upload_label[i], local_additional_uploaded_node_label), axis=0  )
-    else:
-        local_additional_uploaded_node_data =  np.concatenate( (local_additional_uploaded_node_data ,  local_additional_uploaded_node_data_temp   ), axis = 0)
-        local_additional_uploaded_node_label =  np.concatenate( (local_additional_uploaded_node_label ,  local_additional_uploaded_node_label_temp   ), axis = 0)
-        Upload_support_vector_[i] = np.concatenate ( (Upload_support_vector_[i], local_additional_uploaded_node_data) , axis = 0 )
-        Upload_label[i] = np.concatenate (  (Upload_label[i], local_additional_uploaded_node_label), axis=0  )
+    Upload_support_vector_[i] = np.concatenate ((Upload_support_vector_[i], additional_data), axis = 0)
+    Upload_label[i] = np.concatenate ((Upload_label[i], additional_label), axis=0 )
 
-    print("addational size is %s" %(np.size( local_additional_uploaded_node_label )))
+
+    print("addational size is %s" %(np.size( additional_label )))
 #end call
 
 #this part is for random select 
 # print (Collect_label)
 # print (Collect_support_vector_)
 # print (local_additional_uploaded_node_data)
-Collect_label = np.concatenate( (local_additional_uploaded_node_label, Collect_label), axis = 0  )
-Collect_support_vector_ = np.concatenate ( (local_additional_uploaded_node_data, Collect_support_vector_), axis = 0  )
+# Collect_label = np.concatenate( (local_additional_uploaded_node_label, Collect_label), axis = 0  )
+# Collect_support_vector_ = np.concatenate ( (local_additional_uploaded_node_data, Collect_support_vector_), axis = 0  )
 #end call
+
+Collect_support_vector_ = np.concatenate((Upload_support_vector_[0], Upload_support_vector_[1]))
+Collect_label = np.concatenate((Upload_label[0], Upload_label[1])).reshape((-1))
+if (Edge_node_n > 2):
+    for j in range(2, Edge_node_n):
+        Collect_support_vector_ = np.concatenate((Collect_support_vector_, Upload_support_vector_[j]))
+        Collect_label = np.concatenate((Collect_label, Upload_label[j].reshape(-1)))
 
 test=svm.SVC(C = C, kernel = 'rbf', gamma=gamma)
 test.fit(Collect_support_vector_, Collect_label)
@@ -449,7 +446,8 @@ ite_count += 1
 while(not SV_compare(old_support_vectors_, new_support_vectors_)):
     print ("ite_count = %s" %(ite_count)) 
     old_support_vectors_ = new_support_vectors_
-    new_support_vectors_, Upload_support_vector_, Collect_support_vector_, Collect_label = training_iteration(Edge_node_n, Edge_data, Edge_label, Upload_support_vector_,
+    new_support_vectors_, Upload_support_vector_, Collect_support_vector_, Collect_label = \
+        training_iteration(Edge_node_n, Edge_data, Edge_label, Upload_support_vector_,
                        Collect_support_vector_, Collect_label, C, gamma, Upload_label)
     ite_count += 1
 
