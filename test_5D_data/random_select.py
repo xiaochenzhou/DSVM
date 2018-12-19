@@ -3,12 +3,20 @@ from sklearn.utils import shuffle
 import sklearn
 import numpy as np
 
+def vector_compare(element1, element2):
+    true_vector = (element1 == element2)
+
+    if (np.size(element1) == np.sum(true_vector)):
+        return True
+    else:
+        return False
+
 def random_select (global_num, Edge_data, Edge_label, Edge_support_vector):
     data, label = shuffle(Edge_data, Edge_label,random_state=0)
     # data, label = shuffle(data, label,random_state=0)
 
     Edge_num = np.size(Edge_label)
-    interval = 10
+    interval = 200
     index = 0
     return_data = np.array ([Edge_data[index]]  )
     return_label = np.array ([Edge_label[index]] )
@@ -24,7 +32,7 @@ def random_select (global_num, Edge_data, Edge_label, Edge_support_vector):
     print (np.size(return_data, axis = 0 ))
     for i in return_data:
         for k in Edge_support_vector:
-            if ((i[0] == k[0]) & (i[1] == k[1]) & (i[2] == k[2]) & (i[3] == k[3]) & (i[4] == k[4]) ):
+            if (vector_compare(i,k)):
                 return_data = np.delete(return_data, index, 0)
                 return_label = np.delete(return_label, index, 0)
                 index -= 1
@@ -42,7 +50,7 @@ def k_means_random_select (global_num, Edge_data, Edge_label, Edge_support_vecto
     # data, label = shuffle(data, label,random_state=0)
 
     Edge_num = np.size(Edge_label)
-    interval = 10
+    interval = 10000
     k_node_num = (int) (np.size(Edge_label) / interval / 2)
     index = 0
     for i in Edge_data:
