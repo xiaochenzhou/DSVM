@@ -2,6 +2,14 @@ import numpy as np
 from sklearn import svm
 from sklearn.utils import shuffle
 
+def vector_compare(element1, element2):
+    true_vector = (element1 == element2)
+
+    if (np.size(element1) == np.sum(true_vector)):
+        return True
+    else:
+        return False
+
 def array_compare(element, array):
     true_table = (array == element)
 

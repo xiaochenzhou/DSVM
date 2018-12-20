@@ -55,7 +55,7 @@ def kmeans_partition(train_data, train_label, E_node_n):
         
         
 
-    half_data = int(np.size(train_label) / 2)
+    half_data = int(np.size(train_label_plus, axis=0))
 
     k_means_plus = KMeans(n_clusters = E_node_n, random_state = 0).fit(train_data[:half_data])
     k_means_minus = KMeans(n_clusters=E_node_n, random_state=0).fit(train_data[half_data:])

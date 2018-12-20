@@ -1,30 +1,31 @@
 from sklearn.cluster import KMeans
 from sklearn.utils import shuffle
+import Edge_node as Ed
 import sklearn
 import numpy as np
 
-def random_select (global_num, Edge_data, Edge_label, Edge_support_vector):
+def random_select (Edge_data, Edge_label, Edge_support_vector, interval):
     data, label = shuffle(Edge_data, Edge_label,random_state=12)
     # data, label = shuffle(data, label,random_state=0)
 
     Edge_num = np.size(Edge_label)
-    interval = 200
+    interval = interval
     index = 0
-    return_data = np.array ([Edge_data[index]]  )
-    return_label = np.array ([Edge_label[index]] )
+    return_data = np.array ([Edge_data[index]])
+    return_label = np.array ([Edge_label[index]])
     index += interval
     # print (return_label)
     while (index < Edge_num):
-        return_data = np.concatenate( (return_data, np.array ([data[index]]  )), axis = 0 )
-        return_label = np.concatenate ( (return_label, np.array ([label[index]] )), axis = 0  )
+        return_data = np.concatenate( (return_data, np.array ([data[index]])), axis = 0)
+        return_label = np.concatenate ( (return_label, np.array ([label[index]])), axis = 0)
         index += interval
     index = 0
     # print (return_data)
-    print ("befor delete the return data size is ")
+    print ("before delete the return data size is ")
     print (np.size(return_data, axis = 0 ))
     for i in return_data:
         for k in Edge_support_vector:
-            if ((i[0] == k[0]) & (i[1] == k[1]) & (i[2] == k[2]) & (i[3] == k[3]) & (i[4] == k[4]) ):
+            if (Ed.vector_compare(i, k)):
                 return_data = np.delete(return_data, index, 0)
                 return_label = np.delete(return_label, index, 0)
                 index -= 1
