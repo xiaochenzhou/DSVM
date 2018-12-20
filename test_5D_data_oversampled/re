@@ -1,0 +1,168 @@
+Test size is 2000
+global size is 8000
+[127 128]
+[127 128]
+510
+[107 103]
+befor delete the return data size is 
+5
+Edge node size is 828
+this is the new data should be uploaded
+5
+addational size is 5
+befor delete the return data size is 
+4
+Edge node size is 761
+this is the new data should be uploaded
+4
+addational size is 4
+befor delete the return data size is 
+4
+Edge node size is 770
+this is the new data should be uploaded
+4
+addational size is 4
+befor delete the return data size is 
+5
+Edge node size is 838
+this is the new data should be uploaded
+5
+addational size is 5
+befor delete the return data size is 
+5
+Edge node size is 831
+this is the new data should be uploaded
+5
+addational size is 5
+befor delete the return data size is 
+5
+Edge node size is 818
+this is the new data should be uploaded
+5
+addational size is 5
+befor delete the return data size is 
+4
+Edge node size is 784
+this is the new data should be uploaded
+4
+addational size is 4
+befor delete the return data size is 
+4
+Edge node size is 800
+this is the new data should be uploaded
+4
+addational size is 4
+befor delete the return data size is 
+4
+Edge node size is 767
+this is the new data should be uploaded
+4
+addational size is 4
+befor delete the return data size is 
+5
+Edge node size is 803
+this is the new data should be uploaded
+5
+addational size is 5
+begin
+45
+ite_count = 0
+central score is 0.996
+Edge_data[0].size is 868 and Edge_label[0].size is 868
+Edge_data[1].size is 802 and Edge_label[1].size is 802
+Edge_data[2].size is 811 and Edge_label[2].size is 811
+Edge_data[3].size is 878 and Edge_label[3].size is 878
+Edge_data[4].size is 871 and Edge_label[4].size is 871
+Edge_data[5].size is 858 and Edge_label[5].size is 858
+Edge_data[6].size is 825 and Edge_label[6].size is 825
+Edge_data[7].size is 841 and Edge_label[7].size is 841
+Edge_data[8].size is 808 and Edge_label[8].size is 808
+Edge_data[9].size is 843 and Edge_label[9].size is 843
+182
+[55 63]
+ite_count = 1
+central score is 0.995
+Edge_data[0].size is 999 and Edge_label[0].size is 999
+Edge_data[1].size is 933 and Edge_label[1].size is 933
+Edge_data[2].size is 938 and Edge_label[2].size is 938
+Edge_data[3].size is 997 and Edge_label[3].size is 997
+Edge_data[4].size is 996 and Edge_label[4].size is 996
+Edge_data[5].size is 982 and Edge_label[5].size is 982
+Edge_data[6].size is 951 and Edge_label[6].size is 951
+Edge_data[7].size is 963 and Edge_label[7].size is 963
+Edge_data[8].size is 914 and Edge_label[8].size is 914
+Edge_data[9].size is 965 and Edge_label[9].size is 965
+319
+[ 99 101]
+ite_count = 2
+central score is 0.996
+Edge_data[0].size is 1132 and Edge_label[0].size is 1132
+Edge_data[1].size is 1045 and Edge_label[1].size is 1045
+Edge_data[2].size is 1053 and Edge_label[2].size is 1053
+Edge_data[3].size is 1127 and Edge_label[3].size is 1127
+Edge_data[4].size is 1121 and Edge_label[4].size is 1121
+Edge_data[5].size is 1110 and Edge_label[5].size is 1110
+Edge_data[6].size is 1067 and Edge_label[6].size is 1067
+Edge_data[7].size is 1080 and Edge_label[7].size is 1080
+Edge_data[8].size is 1046 and Edge_label[8].size is 1046
+Edge_data[9].size is 1090 and Edge_label[9].size is 1090
+387
+[121 117]
+ite_count = 3
+central score is 0.9965
+Edge_data[0].size is 1191 and Edge_label[0].size is 1191
+Edge_data[1].size is 1104 and Edge_label[1].size is 1104
+Edge_data[2].size is 1115 and Edge_label[2].size is 1115
+Edge_data[3].size is 1188 and Edge_label[3].size is 1188
+Edge_data[4].size is 1184 and Edge_label[4].size is 1184
+Edge_data[5].size is 1170 and Edge_label[5].size is 1170
+Edge_data[6].size is 1132 and Edge_label[6].size is 1132
+Edge_data[7].size is 1135 and Edge_label[7].size is 1135
+Edge_data[8].size is 1108 and Edge_label[8].size is 1108
+Edge_data[9].size is 1156 and Edge_label[9].size is 1156
+417
+[122 126]
+ite_count = 4
+central score is 0.9975
+Edge_data[0].size is 1219 and Edge_label[0].size is 1219
+Edge_data[1].size is 1127 and Edge_label[1].size is 1127
+Edge_data[2].size is 1144 and Edge_label[2].size is 1144
+Edge_data[3].size is 1217 and Edge_label[3].size is 1217
+Edge_data[4].size is 1211 and Edge_label[4].size is 1211
+Edge_data[5].size is 1197 and Edge_label[5].size is 1197
+Edge_data[6].size is 1159 and Edge_label[6].size is 1159
+Edge_data[7].size is 1162 and Edge_label[7].size is 1162
+Edge_data[8].size is 1133 and Edge_label[8].size is 1133
+Edge_data[9].size is 1184 and Edge_label[9].size is 1184
+428
+[127 127]
+ite_count = 5
+central score is 0.996
+Edge_data[0].size is 1230 and Edge_label[0].size is 1230
+Edge_data[1].size is 1136 and Edge_label[1].size is 1136
+Edge_data[2].size is 1155 and Edge_label[2].size is 1155
+Edge_data[3].size is 1228 and Edge_label[3].size is 1228
+Edge_data[4].size is 1221 and Edge_label[4].size is 1221
+Edge_data[5].size is 1207 and Edge_label[5].size is 1207
+Edge_data[6].size is 1169 and Edge_label[6].size is 1169
+Edge_data[7].size is 1169 and Edge_label[7].size is 1169
+Edge_data[8].size is 1142 and Edge_label[8].size is 1142
+Edge_data[9].size is 1195 and Edge_label[9].size is 1195
+430
+[127 128]
+ite_count = 6
+central score is 0.996
+Edge_data[0].size is 1232 and Edge_label[0].size is 1232
+Edge_data[1].size is 1137 and Edge_label[1].size is 1137
+Edge_data[2].size is 1157 and Edge_label[2].size is 1157
+Edge_data[3].size is 1230 and Edge_label[3].size is 1230
+Edge_data[4].size is 1223 and Edge_label[4].size is 1223
+Edge_data[5].size is 1209 and Edge_label[5].size is 1209
+Edge_data[6].size is 1170 and Edge_label[6].size is 1170
+Edge_data[7].size is 1171 and Edge_label[7].size is 1171
+Edge_data[8].size is 1144 and Edge_label[8].size is 1144
+Edge_data[9].size is 1197 and Edge_label[9].size is 1197
+430
+[127 128]
+ite_count = 7
+0
