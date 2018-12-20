@@ -35,27 +35,27 @@ def kmeans_partition(train_data, train_label, E_node_n):
                 train_data_plus = np.array([train_data[index]])
                 train_label_plus = np.array([train_label[index]])
             else:
-                train_data_plus = np.concatenate  (  (train_data_plus,np.array([train_data[index]]) ) , axis = 0   )
-                train_label_plus = np.concatenate  (  (train_label_plus,np.array([train_label[index]]) ) , axis = 0   )
+                train_data_plus = np.concatenate((train_data_plus,np.array([train_data[index]]) ) , axis = 0   )
+                train_label_plus = np.concatenate((train_label_plus,np.array([train_label[index]]) ) , axis = 0   )
             f1 = False
         if (train_label[index] == -1):
             if (f2):
                 train_data_minus = np.array([train_data[index]])
                 train_label_minus = np.array([train_label[index]])
             else:
-                train_data_minus = np.concatenate  (  (train_data_minus,np.array([train_data[index]]) ) , axis = 0   )
-                train_label_minus = np.concatenate  (  (train_label_minus,np.array([train_label[index]]) ) , axis = 0   )
+                train_data_minus = np.concatenate((train_data_minus,np.array([train_data[index]])) , axis = 0   )
+                train_label_minus = np.concatenate((train_label_minus,np.array([train_label[index]])) , axis = 0   )
             f2 = False
         index += 1
     
-    train_data = np.concatenate ( (train_data_plus, train_data_minus), axis  =0  )
-    train_label = np.concatenate ( (train_label_plus, train_label_minus), axis = 0  )
+    train_data = np.concatenate((train_data_plus, train_data_minus), axis=0 )
+    train_label = np.concatenate((train_label_plus, train_label_minus), axis = 0)
 
     # print ("train_data.size is %i" %(np.size ( train_data, axis= 0 )) )
         
         
 
-    half_data = int(np.size(train_label) / 2)
+    half_data = int(np.size(train_label_plus))
 
     k_means_plus = KMeans(n_clusters = E_node_n, random_state = 0).fit(train_data[:half_data])
     k_means_minus = KMeans(n_clusters=E_node_n, random_state=0).fit(train_data[half_data:])
