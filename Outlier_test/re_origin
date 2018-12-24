@@ -1,0 +1,160 @@
+global size is 10000
+[368 354]
+[368 354]
+Edge_data[0].size is 1025 and Edge_label[0].size is 1025
+Edge_data[1].size is 984 and Edge_label[1].size is 984
+Edge_data[2].size is 1056 and Edge_label[2].size is 1056
+Edge_data[3].size is 1018 and Edge_label[3].size is 1018
+Edge_data[4].size is 971 and Edge_label[4].size is 971
+Edge_data[5].size is 931 and Edge_label[5].size is 931
+Edge_data[6].size is 1048 and Edge_label[6].size is 1048
+Edge_data[7].size is 1014 and Edge_label[7].size is 1014
+Edge_data[8].size is 977 and Edge_label[8].size is 977
+Edge_data[9].size is 976 and Edge_label[9].size is 976
+859
+[238 234]
+60
+Edge_data[0].size is 1085 and Edge_label[0].size is 1085
+Edge_data[1].size is 1036 and Edge_label[1].size is 1036
+Edge_data[2].size is 1112 and Edge_label[2].size is 1112
+Edge_data[3].size is 1066 and Edge_label[3].size is 1066
+Edge_data[4].size is 1031 and Edge_label[4].size is 1031
+Edge_data[5].size is 991 and Edge_label[5].size is 991
+Edge_data[6].size is 1108 and Edge_label[6].size is 1108
+Edge_data[7].size is 1074 and Edge_label[7].size is 1074
+Edge_data[8].size is 1001 and Edge_label[8].size is 1001
+Edge_data[9].size is 1036 and Edge_label[9].size is 1036
+308
+[124 141]
+ite = 0
+Edge_data[0].size is 1313 and Edge_label[0].size is 1313
+Edge_data[1].size is 1265 and Edge_label[1].size is 1265
+Edge_data[2].size is 1323 and Edge_label[2].size is 1323
+Edge_data[3].size is 1283 and Edge_label[3].size is 1283
+Edge_data[4].size is 1266 and Edge_label[4].size is 1266
+Edge_data[5].size is 1227 and Edge_label[5].size is 1227
+Edge_data[6].size is 1326 and Edge_label[6].size is 1326
+Edge_data[7].size is 1304 and Edge_label[7].size is 1304
+Edge_data[8].size is 1210 and Edge_label[8].size is 1210
+Edge_data[9].size is 1255 and Edge_label[9].size is 1255
+482
+[191 198]
+ite = 1
+Edge_data[0].size is 1483 and Edge_label[0].size is 1483
+Edge_data[1].size is 1422 and Edge_label[1].size is 1422
+Edge_data[2].size is 1481 and Edge_label[2].size is 1481
+Edge_data[3].size is 1441 and Edge_label[3].size is 1441
+Edge_data[4].size is 1414 and Edge_label[4].size is 1414
+Edge_data[5].size is 1392 and Edge_label[5].size is 1392
+Edge_data[6].size is 1480 and Edge_label[6].size is 1480
+Edge_data[7].size is 1460 and Edge_label[7].size is 1460
+Edge_data[8].size is 1346 and Edge_label[8].size is 1346
+Edge_data[9].size is 1419 and Edge_label[9].size is 1419
+631
+[242 241]
+ite = 2
+Edge_data[0].size is 1614 and Edge_label[0].size is 1614
+Edge_data[1].size is 1569 and Edge_label[1].size is 1569
+Edge_data[2].size is 1612 and Edge_label[2].size is 1612
+Edge_data[3].size is 1556 and Edge_label[3].size is 1556
+Edge_data[4].size is 1544 and Edge_label[4].size is 1544
+Edge_data[5].size is 1530 and Edge_label[5].size is 1530
+Edge_data[6].size is 1620 and Edge_label[6].size is 1620
+Edge_data[7].size is 1601 and Edge_label[7].size is 1601
+Edge_data[8].size is 1479 and Edge_label[8].size is 1479
+Edge_data[9].size is 1554 and Edge_label[9].size is 1554
+740
+[263 288]
+ite = 3
+Edge_data[0].size is 1713 and Edge_label[0].size is 1713
+Edge_data[1].size is 1662 and Edge_label[1].size is 1662
+Edge_data[2].size is 1711 and Edge_label[2].size is 1711
+Edge_data[3].size is 1652 and Edge_label[3].size is 1652
+Edge_data[4].size is 1647 and Edge_label[4].size is 1647
+Edge_data[5].size is 1619 and Edge_label[5].size is 1619
+Edge_data[6].size is 1723 and Edge_label[6].size is 1723
+Edge_data[7].size is 1701 and Edge_label[7].size is 1701
+Edge_data[8].size is 1574 and Edge_label[8].size is 1574
+Edge_data[9].size is 1658 and Edge_label[9].size is 1658
+841
+[298 299]
+ite = 4
+Edge_data[0].size is 1796 and Edge_label[0].size is 1796
+Edge_data[1].size is 1753 and Edge_label[1].size is 1753
+Edge_data[2].size is 1803 and Edge_label[2].size is 1803
+Edge_data[3].size is 1747 and Edge_label[3].size is 1747
+Edge_data[4].size is 1743 and Edge_label[4].size is 1743
+Edge_data[5].size is 1714 and Edge_label[5].size is 1714
+Edge_data[6].size is 1821 and Edge_label[6].size is 1821
+Edge_data[7].size is 1792 and Edge_label[7].size is 1792
+Edge_data[8].size is 1651 and Edge_label[8].size is 1651
+Edge_data[9].size is 1749 and Edge_label[9].size is 1749
+936
+[323 323]
+ite = 5
+Edge_data[0].size is 1883 and Edge_label[0].size is 1883
+Edge_data[1].size is 1840 and Edge_label[1].size is 1840
+Edge_data[2].size is 1888 and Edge_label[2].size is 1888
+Edge_data[3].size is 1812 and Edge_label[3].size is 1812
+Edge_data[4].size is 1837 and Edge_label[4].size is 1837
+Edge_data[5].size is 1803 and Edge_label[5].size is 1803
+Edge_data[6].size is 1915 and Edge_label[6].size is 1915
+Edge_data[7].size is 1882 and Edge_label[7].size is 1882
+Edge_data[8].size is 1726 and Edge_label[8].size is 1726
+Edge_data[9].size is 1838 and Edge_label[9].size is 1838
+996
+[342 330]
+ite = 6
+Edge_data[0].size is 1941 and Edge_label[0].size is 1941
+Edge_data[1].size is 1895 and Edge_label[1].size is 1895
+Edge_data[2].size is 1935 and Edge_label[2].size is 1935
+Edge_data[3].size is 1866 and Edge_label[3].size is 1866
+Edge_data[4].size is 1888 and Edge_label[4].size is 1888
+Edge_data[5].size is 1860 and Edge_label[5].size is 1860
+Edge_data[6].size is 1975 and Edge_label[6].size is 1975
+Edge_data[7].size is 1937 and Edge_label[7].size is 1937
+Edge_data[8].size is 1769 and Edge_label[8].size is 1769
+Edge_data[9].size is 1898 and Edge_label[9].size is 1898
+1039
+[352 345]
+ite = 7
+Edge_data[0].size is 1979 and Edge_label[0].size is 1979
+Edge_data[1].size is 1935 and Edge_label[1].size is 1935
+Edge_data[2].size is 1976 and Edge_label[2].size is 1976
+Edge_data[3].size is 1898 and Edge_label[3].size is 1898
+Edge_data[4].size is 1928 and Edge_label[4].size is 1928
+Edge_data[5].size is 1899 and Edge_label[5].size is 1899
+Edge_data[6].size is 2016 and Edge_label[6].size is 2016
+Edge_data[7].size is 1974 and Edge_label[7].size is 1974
+Edge_data[8].size is 1806 and Edge_label[8].size is 1806
+Edge_data[9].size is 1940 and Edge_label[9].size is 1940
+1069
+[364 349]
+ite = 8
+Edge_data[0].size is 2008 and Edge_label[0].size is 2008
+Edge_data[1].size is 1961 and Edge_label[1].size is 1961
+Edge_data[2].size is 2002 and Edge_label[2].size is 2002
+Edge_data[3].size is 1922 and Edge_label[3].size is 1922
+Edge_data[4].size is 1957 and Edge_label[4].size is 1957
+Edge_data[5].size is 1928 and Edge_label[5].size is 1928
+Edge_data[6].size is 2046 and Edge_label[6].size is 2046
+Edge_data[7].size is 2001 and Edge_label[7].size is 2001
+Edge_data[8].size is 1829 and Edge_label[8].size is 1829
+Edge_data[9].size is 1967 and Edge_label[9].size is 1967
+1080
+[368 354]
+ite = 9
+Edge_data[0].size is 2019 and Edge_label[0].size is 2019
+Edge_data[1].size is 1971 and Edge_label[1].size is 1971
+Edge_data[2].size is 2012 and Edge_label[2].size is 2012
+Edge_data[3].size is 1931 and Edge_label[3].size is 1931
+Edge_data[4].size is 1965 and Edge_label[4].size is 1965
+Edge_data[5].size is 1939 and Edge_label[5].size is 1939
+Edge_data[6].size is 2057 and Edge_label[6].size is 2057
+Edge_data[7].size is 2009 and Edge_label[7].size is 2009
+Edge_data[8].size is 1839 and Edge_label[8].size is 1839
+Edge_data[9].size is 1978 and Edge_label[9].size is 1978
+1080
+[368 354]
+ite = 10
+0
