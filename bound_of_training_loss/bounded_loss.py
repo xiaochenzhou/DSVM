@@ -23,49 +23,49 @@ Global_model.fit(Train_data, Train_label)
 Global_loss = Ce.training_loss(Global_model)
 # print(Ce.training_loss(Global_model))
 
-# Edge_node_n = 2
-# Edge_data, Edge_label, Global_index = \
-#     data_partition(Train_data, Train_label, Edge_node_n)
+Edge_node_n = 10
+Edge_data, Edge_label, Global_index = \
+    data_partition(Train_data, Train_label, Edge_node_n)
+
+Edge_loss = np.zeros(Edge_node_n)
+Edge_upper_loss = np.zeros(Edge_node_n)
+
+for i in range(Edge_node_n):
+    local_model = Ed.local_train(Edge_data[i], Edge_label[i], C, gamma, 'rbf')
+    Edge_loss[i] = Ce.training_loss(local_model)
+
+    upper_model = Ed.local_train(Edge_data[i], Edge_label[i], C*Edge_node_n, gamma, 'rbf')
+    Edge_upper_loss[i] = \
+        (1/Edge_node_n) * Ce.training_loss(upper_model)
+
+print('Upper bound:')
+print(np.sum(Edge_upper_loss))
+print('True value:')
+print(Global_loss)
+print('Lower bound:')
+print(np.sum(Edge_loss))
+
+# for i in range(2,30):
+#     Edge_node_n = i
+#     Edge_data, Edge_label, Global_index = \
+#         data_partition(Train_data, Train_label, Edge_node_n)
 #
-# Edge_loss = np.zeros(Edge_node_n)
-# Edge_upper_loss = np.zeros(Edge_node_n)
+#     Edge_lower_loss = np.zeros(Edge_node_n)
+#     Edge_upper_loss = np.zeros(Edge_node_n)
 #
-# for i in range(Edge_node_n):
-#     local_model = Ed.local_train(Edge_data[i], Edge_label[i], C, gamma, 'rbf')
-#     Edge_loss[i] = Ce.training_loss(local_model)
+#     for i in range(Edge_node_n):
+#         # lower bound of training loss for global model
+#         local_model = Ed.local_train(Edge_data[i], Edge_label[i], C, gamma, 'rbf')
+#         Edge_lower_loss[i] = Ce.training_loss(local_model)
 #
-#     upper_model = Ed.local_train(Edge_data[i], Edge_label[i], C*2*Edge_node_n, gamma, 'rbf')
-#     Edge_upper_loss[i] = \
-#         (1/(2*Edge_node_n)) * Ce.training_loss(upper_model)
+#         # upper bound of training loss for global model
+#         upper_model = Ed.local_train(Edge_data[i], Edge_label[i], C * Edge_node_n, gamma, 'rbf')
+#         Edge_upper_loss[i] = \
+#             (1 / Edge_node_n) * Ce.training_loss(upper_model)
 #
-# print('Upper bound:')
-# print(np.sum(Edge_upper_loss))
-# print('True value:')
-# print(Global_loss)
-# print('Lower bound:')
-# print(np.sum(Edge_loss))
-
-for i in range(2,30):
-    Edge_node_n = i
-    Edge_data, Edge_label, Global_index = \
-        data_partition(Train_data, Train_label, Edge_node_n)
-
-    Edge_lower_loss = np.zeros(Edge_node_n)
-    Edge_upper_loss = np.zeros(Edge_node_n)
-
-    for i in range(Edge_node_n):
-        # lower bound of training loss for global model
-        local_model = Ed.local_train(Edge_data[i], Edge_label[i], C, gamma, 'rbf')
-        Edge_lower_loss[i] = Ce.training_loss(local_model)
-
-        # upper bound of training loss for global model
-        upper_model = Ed.local_train(Edge_data[i], Edge_label[i], C * 2 * Edge_node_n, gamma, 'rbf')
-        Edge_upper_loss[i] = \
-            (1 / (2 * Edge_node_n)) * Ce.training_loss(upper_model)
-
-    if (Global_loss >= np.sum(Edge_lower_loss) and Global_loss <= np.sum(Edge_upper_loss)):
-        print('The principle is right for Edge_node_n = %d' %(Edge_node_n))
-    else:
-        print('The principle is false for Edge_node_n = %d' %(Edge_node_n))
+#     if (Global_loss >= np.sum(Edge_lower_loss) and Global_loss <= np.sum(Edge_upper_loss)):
+#         print('The principle is right for Edge_node_n = %d' %(Edge_node_n))
+#     else:
+#         print('The principle is false for Edge_node_n = %d' %(Edge_node_n))
 
 
